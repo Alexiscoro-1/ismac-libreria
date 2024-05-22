@@ -2,10 +2,17 @@ package com.distribuida.entities;
 
 public class Factura_detalle {
 
+	// Atributos
 	
 	private int idFactura_detalle;
 	private int cantidad;
 	private double subtotal;
+	
+	
+	// Constructor 
+
+	public Factura_detalle() {}
+	
 	public Factura_detalle(int idFactura_detalle, int cantidad, double subtotal) {
 		super();
 		this.idFactura_detalle = idFactura_detalle;

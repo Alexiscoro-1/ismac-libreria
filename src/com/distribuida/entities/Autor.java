@@ -2,6 +2,8 @@ package com.distribuida.entities;
 
 public class Autor {
 
+	// Atributos
+	
 		private int idAutor;
 		private String nombre;
 		private String apellido; 
@@ -10,6 +12,8 @@ public class Autor {
 		private String telefono; 
 		private String correo;
 		
+	// Constructor 
+
 		public Autor() { }
 
 		public Autor(int idAutor, String nombre, String apellido, String pais, String direccion, String telefono,

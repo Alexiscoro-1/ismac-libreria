@@ -4,12 +4,17 @@ import java.util.Date;
 
 public class Factura {
 
+	// Atributos
+	
 		private int idFactura;
 		private String num_factura;
 		private Date fecha;
 		private double total_neto;
 		private double iva;
 		private double total;
+		
+		
+	// Constructor 
 		
 		public Factura() {}
 

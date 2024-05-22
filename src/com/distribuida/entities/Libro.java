@@ -4,6 +4,8 @@ import java.util.Date;
 
 public class Libro {
 
+	// Atributos
+	
 		private String	titutlo;
 		private String editorial;
 		private int num_paginas;
@@ -18,6 +20,9 @@ public class Libro {
 		private String presentacion;
 		private double precio;
 		
+		
+	// Constructor 
+
 		public Libro() {}
 
 		public Libro(String titutlo, String editorial, int num_paginas, String edicion, String idioma,

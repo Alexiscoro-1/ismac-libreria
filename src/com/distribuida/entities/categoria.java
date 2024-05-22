@@ -2,8 +2,14 @@ package com.distribuida.entities;
 
 public class categoria {
 
+	// Atributos
+	
 		private String idcategoria;
 		private String categoria;
+		
+	// Constructor 
+		public categoria() {}
+		
 		public categoria(String idcategoria, String categoria) {
 			super();
 			this.idcategoria = idcategoria;
