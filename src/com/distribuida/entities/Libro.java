@@ -5,7 +5,7 @@ import java.util.Date;
 public class Libro {
 
 	// Atributos
-	
+		
 		private String	titutlo;
 		private String editorial;
 		private int num_paginas;
@@ -20,6 +20,8 @@ public class Libro {
 		private String presentacion;
 		private double precio;
 		
+		private categoria categoria;
+		private Autor autor;
 		
 	// Constructor 
 
@@ -148,13 +150,29 @@ public class Libro {
 			this.precio = precio;
 		}
 
+		public categoria getCategoria() {
+			return categoria;
+		}
+
+		public void setCategoria(categoria categoria) {
+			this.categoria = categoria;
+		}
+
+		public Autor getAutor() {
+			return autor;
+		}
+
+		public void setAutor(Autor autor) {
+			this.autor = autor;
+		}
+
 		@Override
 		public String toString() {
 			return "Libro [titutlo=" + titutlo + ", editorial=" + editorial + ", num_paginas=" + num_paginas
 					+ ", edicion=" + edicion + ", idioma=" + idioma + ", fecha_publicacion=" + fecha_publicacion
 					+ ", descripcion=" + descripcion + ", tipo_pasta=" + tipo_pasta + ", ISBN=" + ISBN
 					+ ", num_ejemplares=" + num_ejemplares + ", portada=" + portada + ", presentacion=" + presentacion
-					+ ", precio=" + precio + "]";
+					+ ", precio=" + precio + ", categoria=" + categoria + ", autor=" + autor + "]";
 		}
 		
 }

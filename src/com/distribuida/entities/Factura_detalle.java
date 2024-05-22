@@ -3,7 +3,8 @@ package com.distribuida.entities;
 public class Factura_detalle {
 
 	// Atributos
-	
+	private Factura factura ;
+	private Libro libro;
 	private int idFactura_detalle;
 	private int cantidad;
 	private double subtotal;
@@ -39,8 +40,24 @@ public class Factura_detalle {
 	}
 	@Override
 	public String toString() {
-		return "Factura_detalle [idFactura_detalle=" + idFactura_detalle + ", cantidad=" + cantidad + ", subtotal="
-				+ subtotal + "]";
+		return "Factura_detalle [factura=" + factura + ", libro=" + libro + ", idFactura_detalle=" + idFactura_detalle
+				+ ", cantidad=" + cantidad + ", subtotal=" + subtotal + "]";
+	}
+
+	public Factura getFactura() {
+		return factura;
+	}
+
+	public void setFactura(Factura factura) {
+		this.factura = factura;
+	}
+
+	public Libro getLibro() {
+		return libro;
+	}
+
+	public void setLibro(Libro libro) {
+		this.libro = libro;
 	}
 	
 }

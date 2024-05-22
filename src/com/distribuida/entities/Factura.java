@@ -5,7 +5,7 @@ import java.util.Date;
 public class Factura {
 
 	// Atributos
-	
+		private Cliente cliente;
 		private int idFactura;
 		private String num_factura;
 		private Date fecha;
@@ -78,8 +78,16 @@ public class Factura {
 
 		@Override
 		public String toString() {
-			return "Factura [idFactura=" + idFactura + ", num_factura=" + num_factura + ", fecha=" + fecha
-					+ ", total_neto=" + total_neto + ", iva=" + iva + ", total=" + total + "]";
+			return "Factura [cliente=" + cliente + ", idFactura=" + idFactura + ", num_factura=" + num_factura
+					+ ", fecha=" + fecha + ", total_neto=" + total_neto + ", iva=" + iva + ", total=" + total + "]";
+		}
+
+		public Cliente getCliente() {
+			return cliente;
+		}
+
+		public void setCliente(Cliente cliente) {
+			this.cliente = cliente;
 		}
 		
 		
