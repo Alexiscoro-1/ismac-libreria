@@ -10,8 +10,7 @@ import com.distribuida.entities.Autor;
 	public Autor findOne(int id);
 	
 	public void add (Autor autor);
+	public void up(Autor autor);
+	public void del(int id);
 	
-	public void up (Autor autor);
-
-	public void del (int id);
 }

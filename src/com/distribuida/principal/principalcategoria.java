@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.distribuida.dao.categoriaDAO;
+import com.distribuida.dao.CategoriaDAO;
 import com.distribuida.entities.categoria;
 
 public class principalcategoria {
@@ -15,7 +15,7 @@ public class principalcategoria {
 		
 		 ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
 		 
-		 categoriaDAO CategoriaDAO	= context.getBean("categoriaDAOImpl",categoriaDAO.class);
+		 CategoriaDAO CategoriaDAO	= context.getBean("categoriaDAOImpl",CategoriaDAO.class);
 		 
 		 List<categoria> categorias= CategoriaDAO.findALL();
 		 categorias.forEach(item -> {

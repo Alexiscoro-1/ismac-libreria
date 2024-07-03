@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
 import com.distribuida.entities.categoria;
 
 @Repository
-public class categoriaDAOImpl implements categoriaDAO {
+public class categoriaDAOImpl implements CategoriaDAO {
 
 	
 	@Autowired

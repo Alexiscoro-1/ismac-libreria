@@ -2,7 +2,7 @@ package com.distribuida.dao;
 
 	import java.util.List;
 	import com.distribuida.entities.categoria;
-	public interface categoriaDAO {
+	public interface CategoriaDAO {
 
 		
 		public List<categoria> findALL();
