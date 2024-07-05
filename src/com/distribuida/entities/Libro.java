@@ -55,11 +55,13 @@ public class Libro {
 		
 		
 		
-		@JoinColumn(name ="id_categoria")
+		@JoinColumn(name ="id_categoria")		
+		@ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+		private categoria categoria;
+		
 		@JoinColumn(name ="id_Autor")
 		@ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
-		private Cliente categoria;
-		private Cliente autor;
+		private Autor autor;
 
 		
 		
@@ -70,7 +72,7 @@ public class Libro {
 			
 			public Libro(int idLibro, String titutlo, String editorial, int numPaginas, String edicion, String idioma,
 				Date fechaPublicacion, String descripcion, String tipoPpasta, String iSBN, int numEjemplares,
-				String portada, String presentacion, double precio, Cliente categoria, Cliente autor) {
+				String portada, String presentacion, double precio) {
 			
 			
 			this.idLibro = idLibro;
@@ -82,13 +84,13 @@ public class Libro {
 			this.fechaPublicacion = fechaPublicacion;
 			this.descripcion = descripcion;
 			this.tipoPpasta = tipoPpasta;
-			ISBN = iSBN;
+			this.ISBN = iSBN;
 			this.numEjemplares = numEjemplares;
 			this.portada = portada;
 			this.presentacion = presentacion;
 			this.precio = precio;
-			this.categoria = categoria;
-			this.autor = autor;
+			//this.categoria = categoria;
+			//this.autor = autor;
 		}
 
 
@@ -261,25 +263,25 @@ public class Libro {
 
 
 
-		public Cliente getCategoria() {
+		public categoria getCategoria() {
 			return categoria;
 		}
 
 
 
-		public void setCategoria(Cliente categoria) {
+		public void setCategoria(categoria categoria) {
 			this.categoria = categoria;
 		}
 
 
 
-		public Cliente getAutor() {
+		public Autor getAutor() {
 			return autor;
 		}
 
 
 
-		public void setAutor(Cliente autor) {
+		public void setAutor(Autor autor) {
 			this.autor = autor;
 		}
 		
